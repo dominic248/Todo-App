@@ -9,5 +9,6 @@ from .forms import *
 class UserAdmin(admin.ModelAdmin):  
     form = UserAdminForm
     
-
-admin.site.register(User, UserAdmin)
+admin.site.register(User)
+# admin.site.register(User, UserAdmin)
+ 

@@ -22,9 +22,4 @@ urlpatterns = [
     path('api/todos/', include('todos.api.urls')), 
 ]
 
-# pyjwt decode --no-verify <TOKEN>
-# import jwt
-# jwt.decode('<TOKEN>', verify=False)
 
-# jwt.encode(<PAYLOAD>, '<SECRET_KEY>', algorithm=['HS256']) => <TOKEN>
-# jwt.decode('<TOKEN>','<SECRET_KEY>',algorithms=['HS256']) => <PAYLOAD>

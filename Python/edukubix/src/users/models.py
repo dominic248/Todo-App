@@ -25,6 +25,7 @@ class User(AbstractBaseUser):
     active = models.BooleanField(default=True)
     staff = models.BooleanField(default=False) # a admin user; non super-user
     admin = models.BooleanField(default=False) # a superuser
+    all_logout = models.CharField(max_length=20,default='')
     # notice the absence of a "Password field", that is built in.
 
     USERNAME_FIELD = 'username'
